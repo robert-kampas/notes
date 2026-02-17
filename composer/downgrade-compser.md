@@ -1,0 +1,4 @@
+```bash
+composer self-update --1
+composer self-update --2
+```

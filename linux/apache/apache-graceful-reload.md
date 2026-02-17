@@ -1,0 +1,3 @@
+```bash
+apachectl -k graceful
+```
