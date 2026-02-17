@@ -21,7 +21,6 @@
     * [show-files-that-have-merge-conflicts.md](git/show-files-that-have-merge-conflicts.md)
 * [hacking](hacking/)
     * [xss-injections-examples.txt](hacking/xss-injections-examples.txt)
-* [index.sh](index.sh)
 * [linux](linux/)
     * [apache](linux/apache/)
         * [apache-graceful-reload.md](linux/apache/apache-graceful-reload.md)

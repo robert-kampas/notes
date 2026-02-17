@@ -3,7 +3,7 @@
 {
     echo "# Index"
 
-    find . -mindepth 1 -not -path './.git*' -not -name 'README.md' -not -name '.DS_Store' | sort | while read -r item; do
+    find . -mindepth 1 -not -path './.git*' -not -name 'README.md' -not -name 'index.sh' -not -name '.DS_Store' | sort | while read -r item; do
         relative="${item#./}"
         name=$(basename "$relative")
         depth=$(echo "$relative" | tr -cd '/' | wc -c)
