@@ -1,2 +1,5 @@
-theme: minima
-
+theme: jekyll-theme-hacker
+timezone: Europe/London
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
