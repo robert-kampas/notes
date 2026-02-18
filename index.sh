@@ -2,7 +2,7 @@
 {
     echo "# Index"
     echo ""
-    find . -mindepth 1 -not -path './.git*' -not -name 'README.md' -not -name 'index.sh' -not -name '_config.yml' -not -name '.DS_Store' -print0 |
+    find . -mindepth 1 -not -path './.git*' -not -name 'README.md' -not -name 'index.sh' -not -name '_config.yml' -not -name 'CNAME' -not -name '.DS_Store' -print0 |
         sort -z |
         while IFS= read -r -d '' item; do
             relative="${item#./}"
