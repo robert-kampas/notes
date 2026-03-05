@@ -1,11 +1,13 @@
 #!/bin/bash
 {
+    readonly DOCS_DIR="docs"
+    cd "./$DOCS_DIR"
     echo "# Index"
     echo ""
-    find . -mindepth 1 -not -path './.git*' -not -name 'README.md' -not -name 'index.sh' -not -name '_config.yml' -not -name 'CNAME' -not -name '.DS_Store' -print0 |
+    find . -mindepth 1 -not -name '.DS_Store' -print0 |
         sort -z |
         while IFS= read -r -d '' item; do
-            relative="${item#./}"
+            relative="$DOCS_DIR/${item#./}"
             name=$(basename "$relative")
             depth=$(echo "$relative" | tr -cd '/' | tr -d ' ' | wc -c | tr -d ' ')
             indent=$(printf '%*s' $((depth * 4)) '')
