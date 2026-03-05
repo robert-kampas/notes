@@ -28,7 +28,7 @@ openssl req -x509 -newkey rsa:4096 -keyout docker.key \
 
 You may want to double-click the _docker.crt_ file to add it to your computer's keychain.
 
-![alt text](/511ed76a-7d8d-4baa-949a-cd3c7365cf5a.png)
+![alt text](/media/511ed76a-7d8d-4baa-949a-cd3c7365cf5a.png)
 
 Run the following command to set up a local HTTP proxy.
 
