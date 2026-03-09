@@ -52,3 +52,6 @@
     * [httrack-clone-website.sh](docs/scripts/httrack-clone-website.sh)
     * [s3-get-size-of-each-s3-bucket-on-my-account.sh](docs/scripts/s3-get-size-of-each-s3-bucket-on-my-account.sh)
     * [zip-every-file-in-directory.sh](docs/scripts/zip-every-file-in-directory.sh)
+* [Wordpress](docs/wordpress/)
+    * [add-virtual-page-templates.md](docs/wordpress/add-virtual-page-templates.md)
+    * [create-custom-route-to-download-file.md](docs/wordpress/create-custom-route-to-download-file.md)
