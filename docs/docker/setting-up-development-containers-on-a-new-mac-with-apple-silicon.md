@@ -21,7 +21,7 @@ Then, inside the _certs_ directory, create a new self-signed Docker certificate.
 ```bash
 openssl req -x509 -newkey rsa:4096 -keyout docker.key \
 -out docker.crt -days 2000 -nodes \
--subj "/C=GB/L=London/emailAddress=no-reply@companyname.com/O=Company Name/OU=Digital Team/CN=*.docker" \
+-subj "/C=GB/L=London/emailAddress=no-reply@bxops.com/O=BX Ops/OU=Dev Team/CN=*.docker" \
 -config <(cat /etc/ssl/openssl.cnf <(printf "[SAN]\nsubjectAltName=DNS:*.docker, IP:127.0.0.1")) \
 -reqexts SAN -extensions SAN
 ```
